@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+@import "tailwindcss";
+@layer base {
+  :root {
+    --font-bitcount: 'Bitcount Prop Single', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-bitcount {
+    font-family: var(--font-bitcount);
+  }
+}
+/* @theme {
+  --font-bitcount:'"Bitcount Prop Single"','sans-serif' ; 
+} */

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-800">
+  <!-- Start Screen Content -->
+  <div id="start-screen" class="quiz-screen w-full max-w-xl text-center p-6 bg-white rounded-lg shadow-md">
+    
+     <div class="welcome-card">
+      <div class="hello-card font-bitcount text-6xl semi-bold uppercase">
+        Hello! 
+      </div>
+      <div class="flex flex-col-reverse items-center text-center">
+        <input id="user-name" class="h-6 w-48 border border-gray-500 rounded-xl overflow-hidden" type="text" placeholder="Name">
+        <label for="user-name" class="mb-1">Please Enter your name</label>
+      </div>
+      <button id="start-btn" class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 mt-3 rounded hover:cursor-pointer
+">Start</button>
+     </div>
+  </div>
+
+  <!--Question Screen Content-->
+  <div id="quiz-screen" class="quiz-screen hidden unhidden:flex flex-col items-center gap-6 w-full max-w-xl text-center p-4">
+  
+      <!-- Question Number Circle -->
+      <div class="w-24 h-24 border-2 flex items-center justify-center rounded-full bg-blue-900 text-white text-5xl font-sans leading-none mx-auto"><span class="relative bottom-[1px]">Q1</span></div>
+
+      <!-- White Question Card -->
+      <div class="question-card w-full text-center p-6 bg-white rounded-lg shadow-md">
+        <div id="question" class="text-2xl font-bold font-sans leading-snug mb-6">
+          What is the capital of India?
+        </div>
+        <div id="options" class="grid grid-cols-2 gap-x-6 gap-y-8 w-full mx-auto px-4">
+          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">New Delhi</button>
+          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Bengaluru</button>
+          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Mumbai</button>
+          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Chennai</button>
+        </div>
+      </div>
+
+      <!-- Button Row -->
+      <div class="flex justify-between max-w-md gap-2">
+        <button id="save-btn" class="bg-blue-900 hover:bg-green-800 text-white text-lg  hover:text-white  py-2 px-6 rounded-md transition-all duration-200 cursor-pointer">Save</button>
+        <button id="next-btn" class="bg-blue-900 hover:bg-blue-600 text-white  text-lg py-2 px-6 rounded-md transition-all duration-200 cursor-pointer">Next</button>
+      </div>
+
+  </div>
+  
+  <!-- Score Screen Content -->
+  <div id="score-screen" class="quiz-screen hidden flex flex-col w-full max-w-xl text-center p-6 rounded-lg shadow-md">
+    <div class="score-card w-full text-center p-6 bg-white rounded-lg shadow-md">
+      <div>
+        <span class="text-4xl uppercase font-bitcount font-bold">congratulations!!</span>
+          <div class="score text-2xl">
+              Your Score:
+          </div>
+          <div id="score" class="text-4xl font-bold">Score</div>
+      </div>   
+    </div>
+    <div class="flex justify-center gap-4 mt-4">
+        <button id="end-btn" class="bg-pink-600  text-white text-lg  hover:text-white  py-2 px-6 rounded-md transition-all duration-200 cursor-pointer">End</button>
+        <button id="restart-btn" class="bg-blue-900 hover:bg-amber-200 hover:text-black text-white  text-lg py-2 px-6 rounded-md transition-all duration-200 cursor-pointer">Restart</button>
+      </div>
+  </div>
+  
+  
+</body>
+</html>
