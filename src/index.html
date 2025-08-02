@@ -29,7 +29,7 @@
   <div id="quiz-screen" class="quiz-screen hidden unhidden:flex flex-col items-center gap-6 w-full max-w-xl text-center p-4">
   
       <!-- Question Number Circle -->
-      <div class="w-24 h-24 border-2 flex items-center justify-center rounded-full bg-blue-900 text-white text-5xl font-sans leading-none mx-auto"><span class="relative bottom-[1px]">Q1</span></div>
+      <div id="question-number" class="w-24 h-24 border-2 flex items-center justify-center rounded-full bg-blue-900 text-white text-5xl font-sans leading-none mx-auto"><span class="relative bottom-[1px]">Q1</span></div>
 
       <!-- White Question Card -->
       <div class="question-card w-full text-center p-6 bg-white rounded-lg shadow-md">
@@ -37,15 +37,15 @@
           What is the capital of India?
         </div>
         <div id="options" class="grid grid-cols-2 gap-x-6 gap-y-8 w-full mx-auto px-4">
-          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">New Delhi</button>
-          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Bengaluru</button>
-          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Mumbai</button>
-          <button class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Chennai</button>
+          <button id="op-1" class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">New Delhi</button>
+          <button id="op-2" class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Bengaluru</button>
+          <button id="op-3" class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Mumbai</button>
+          <button id="op-4" class="border text-lg transition-all duration-200 hover:bg-amber-200 py-3 px-6 bg-blue-900 text-white hover:text-black rounded-lg shadow-md">Chennai</button>
         </div>
       </div>
 
       <!-- Button Row -->
-      <div class="flex justify-between max-w-md gap-2">
+      <div class="flex justify-center w-full gap-2">
         <button id="save-btn" class="bg-blue-900 hover:bg-green-800 text-white text-lg  hover:text-white  py-2 px-6 rounded-md transition-all duration-200 cursor-pointer">Save</button>
         <button id="next-btn" class="bg-blue-900 hover:bg-blue-600 text-white  text-lg py-2 px-6 rounded-md transition-all duration-200 cursor-pointer">Next</button>
       </div>
